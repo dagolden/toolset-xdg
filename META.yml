@@ -1,0 +1,23 @@
+---
+name: ToolSet-XDG
+version: 0.01
+author:
+  - 'David A Golden <dagolden@cpan.org>'
+abstract: ToolSet with common features for DAGOLDEN
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  Carp: 0
+  Perl6::Say: 0
+  Scalar::Util: 0
+  Toolset: 0
+  perl: 5.006
+provides:
+  XDG:
+    file: lib/XDG.pm
+    version: 0.01
+generated_by: Module::Build version 0.271
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2

@@ -1,0 +1,13 @@
+Build.PL
+Changes
+INSTALL
+lib/XDG.pm
+LICENSE
+MANIFEST			This list of files
+META.yml
+README
+t/00-load.t
+t/01-api.t
+Todo
+Makefile.PL
+lib/XDG.pod
