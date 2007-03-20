@@ -67,8 +67,10 @@ my $builder = $class->new(
     create_makefile_pl  => 'traditional',
     requires => {
         perl            => 5.006,
-        'Toolset'       => 0,
+        'ToolSet'       => 0,
         'Carp'          => 0,
+        'Data::Dump::Streamer' => 0,
+        'File::Spec'    => 0,
         'Perl6::Say'    => 0,
         'Scalar::Util'  => 0,
     },

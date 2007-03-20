@@ -1,6 +1,6 @@
 package XDG;
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 use base 'ToolSet';
 
@@ -10,6 +10,8 @@ ToolSet->set_warnings(1);
 
 ToolSet->export(
     'Carp' => 'carp croak confess',
+    'Data::Dump::Streamer' => undef,
+    'File::Spec' => undef,
     'Perl6::Say' => 'say',
     'Scalar::Util' => 'refaddr reftype blessed', 
 );

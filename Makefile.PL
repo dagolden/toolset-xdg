@@ -8,9 +8,11 @@ WriteMakefile
           'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/XDG.pm',
           'PREREQ_PM' => {
-                           'Toolset' => 0,
                            'Scalar::Util' => 0,
+                           'Data::Dump::Streamer' => 0,
                            'Perl6::Say' => 0,
+                           'ToolSet' => 0,
+                           'File::Spec' => 0,
                            'Carp' => 0
                          }
         )
