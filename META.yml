@@ -13,7 +13,7 @@ requires:
   File::Spec: 0
   Perl6::Say: 0
   Scalar::Util: 0
-  ToolSet: 0
+  ToolSet: 0.14
   perl: 5.006
 provides:
   XDG:

@@ -12,7 +12,7 @@ WriteMakefile
                            'Scalar::Util' => 0,
                            'Data::Dump::Streamer' => 0,
                            'Perl6::Say' => 0,
-                           'ToolSet' => 0,
+                           'ToolSet' => '0.14',
                            'File::Spec' => 0,
                            'Carp' => 0
                          }

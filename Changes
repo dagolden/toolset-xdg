@@ -1,5 +1,8 @@
 Revision history for ToolSet-XDG
 
+0.03
+    - added Perl 5.10 features
+
 0.02
     - added File::Spec
     - added DDS

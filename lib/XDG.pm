@@ -12,9 +12,15 @@ ToolSet->export(
     'Carp' => 'carp croak confess',
     'Data::Dump::Streamer' => undef,
     'File::Spec' => undef,
-    'Perl6::Say' => 'say',
     'Scalar::Util' => 'refaddr reftype blessed', 
 );
+
+if ( $] >= 5.010 ) {
+  ToolSet->set_feature( ':5.10' );
+}
+else {
+  ToolSet->export( 'Perl6::Say' => 'say' );
+}
 
 1; # true
 __END__

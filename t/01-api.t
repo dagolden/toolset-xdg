@@ -1,4 +1,3 @@
-#!perl -T
 use strict;
 use Test::More;
 use lib '.';
@@ -8,7 +7,6 @@ my (@exported, @OO_modules);
 BEGIN {
     @exported = qw( 
         carp croak
-        say
         blessed refaddr reftype
         Dump
     );
