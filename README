@@ -3,11 +3,11 @@ NAME
 
 SYNOPSIS
          use XDG;
- 
-         # strict is on
+     
+     # strict is on
          # warnings are on
- 
-         carp "We know how to carp";
+     
+     carp "We know how to carp";
          say "boo";
 
 DESCRIPTION

@@ -1,6 +1,6 @@
 ---
 name: ToolSet-XDG
-version: 0.02
+version: 0.03
 author:
   - 'David A Golden <dagolden@cpan.org>'
 abstract: ToolSet with common features for DAGOLDEN
@@ -18,8 +18,8 @@ requires:
 provides:
   XDG:
     file: lib/XDG.pm
-    version: 0.02
-generated_by: Module::Build version 0.2805
+    version: 0.03
+generated_by: Module::Build version 0.3
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
