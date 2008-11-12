@@ -9,6 +9,7 @@ BEGIN {
         carp croak
         blessed refaddr reftype
         Dump
+        dir file
     );
     @OO_modules = qw(
         File::Spec

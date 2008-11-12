@@ -1,5 +1,8 @@
 Revision history for ToolSet-XDG
 
+0.04
+    - add Path::Class
+    
 0.03 Thu Nov  6 17:31:16 EST 2008
     - added Perl 5.10 features
 

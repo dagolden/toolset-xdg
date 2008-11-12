@@ -71,6 +71,7 @@ my $builder = $class->new(
         'Carp'          => 0,
         'Data::Dump::Streamer' => 0,
         'File::Spec'    => 0,
+        'Path::Class'   => 0,
         'Perl6::Say'    => 0,
         'Scalar::Util'  => 0,
     },
