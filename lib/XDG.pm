@@ -1,23 +1,22 @@
 package XDG;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 use base 'ToolSet';
 
-ToolSet->set_strict(1);
-
-ToolSet->set_warnings(1);
+ToolSet->use_pragma( 'strict' );
+ToolSet->use_pragma( 'warnings' );
 
 ToolSet->export(
     'Carp' => 'carp croak confess',
-    'Data::Dump::Streamer' => undef,
+    'Data::Dump::Streamer' => 'Dump',
     'File::Spec' => undef,
     'Path::Class' => 'file dir',
     'Scalar::Util' => 'refaddr reftype blessed', 
 );
 
 if ( $] >= 5.010 ) {
-  ToolSet->set_feature( ':5.10' );
+  ToolSet->use_pragma( 'feature', ':5.10' );
 }
 else {
   ToolSet->export( 'Perl6::Say' => 'say' );
@@ -48,10 +47,15 @@ This is a custom [ToolSet].  It imports the following functions from
 various modules:
 
 * Carp: {carp, croak, confess}
-* Perl6::Say: {say}
 * Scalar::Util: {blessed refaddr reftype}
+* Path::Class: {file dir}
+* Data::Dump::Streamer: {Dump}
+* File::Spec
 
-{strict} and {warnings} are automatically enabled.
+{strict} and {warnings} are automatically enabled. 
+
+On Perl 5.10, all features are enabled.  If not on Perl 5.10, imports {say()} 
+from Perl6::Say.
 
 = BUGS AND LIMITATIONS
 
@@ -63,7 +67,8 @@ David A Golden  {<dagolden@cpan.org>}
 
 = LICENCE AND COPYRIGHT
 
-Copyright (c) 2006, David A Golden {<dagolden@cpan.org>}. All rights reserved.
+Copyright (c) 2006-2008 David A Golden {<dagolden@cpan.org>}. 
+All rights reserved.
 
 This module is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself. See the {LICENSE} file included with this

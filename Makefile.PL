@@ -14,7 +14,7 @@ WriteMakefile
                            'Perl6::Say' => 0,
                            'File::Spec' => 0,
                            'Carp' => 0,
-                           'ToolSet' => '0.14',
+                           'ToolSet' => '0.99',
                            'Path::Class' => 0
                          }
         )

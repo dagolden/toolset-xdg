@@ -1,5 +1,9 @@
 Revision history for ToolSet-XDG
 
+0.05 Tue Dec  9 21:31:23 EST 2008
+    - update to ToolSet 0.99 API
+    - make DDS::Dump() import explicit
+
 0.04 Tue Nov 11 20:57:21 EST 2008
     - add Path::Class
     
