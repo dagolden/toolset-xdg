@@ -4,7 +4,8 @@ our $VERSION = '0.05';
 
 use base 'ToolSet';
 
-ToolSet->use_pragma( 'strict' );
+# too annoying for command line stuff
+#ToolSet->use_pragma( 'strict' );
 ToolSet->use_pragma( 'warnings' );
 
 ToolSet->export(
