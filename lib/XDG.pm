@@ -1,6 +1,6 @@
 package XDG;
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 use base 'ToolSet';
 
@@ -14,6 +14,7 @@ ToolSet->export(
     'File::Spec' => undef,
     'Path::Class' => 'file dir',
     'Scalar::Util' => 'refaddr reftype blessed', 
+    'File::Slurp' => 'slurp read_file write_file',
 );
 
 if ( $] >= 5.010 ) {

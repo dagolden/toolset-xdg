@@ -1,5 +1,9 @@
 Revision history for ToolSet-XDG
 
+0.06 Sun Apr  5 06:55:53 EDT 2009
+    - added File::Slurp
+    - added warnings
+
 0.05 Tue Dec  9 21:31:23 EST 2008
     - update to ToolSet 0.99 API
     - make DDS::Dump() import explicit
